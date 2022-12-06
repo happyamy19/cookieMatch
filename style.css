@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.App {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+body {
+  font-family: 'Nerko One', cursive;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background: #ffe68a;
+  color: #4f4729;
+}
+
+.has-font {
+  font-family: 'Nerko One', cursive;
+}
+
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+button {
+  font-family: 'Nerko One', cursive;
+  padding: 0px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: white;
+  border: #4f4729;
+  border-radius: 15px;
+  box-shadow: 0 8px #4f4729;
+  color: #4f4729;
+  display: inline-block;
+}
